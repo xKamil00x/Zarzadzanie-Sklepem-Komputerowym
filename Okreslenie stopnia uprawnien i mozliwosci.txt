@@ -1,0 +1,26 @@
+Stopnie uprawnieñ:
+2- uprawnienia sprzedawcy
+1- uprawnienia administratora
+3- uprawnienia magazyniera
+U¿ytkownicy systemu:
+
+a) Manager
+stopieñ 1
+uprawnienia sprzedawcy i magazyniera oraz:
+- dodawanie nowej kategorii,
+- dawanie rabatu,
+- uaktualnienie cen.
+
+b) sprzedawca:
+stopien 0
+uprawnienia:
+-dodawanie klienta,
+-przyjmowanie zamowienia,
+-dostep do bazy klientów wraz z pe³nymi danymi,
+- dodawanie punktów za zakupy.
+
+c) magazynier:
+stopien 2
+uprawnienia:
+dodawanie i usuwanie towaru,
+uaktualnianie stanu towarów.
