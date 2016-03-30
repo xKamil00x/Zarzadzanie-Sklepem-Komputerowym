@@ -1,7 +1,7 @@
-- INSERT INTO `github`.`kategorie` (`id`, `nazwa`) VALUES (NULL, '$nazwa_kategorii');
-- INSERT INTO  `github`.`uzytkownik` (`id` ,`nazwa` ,`haslo` ,`uprawnienia`)VALUES (NULL ,  '$nazwa_uzytkownika,',  '$haslo_md5',  '1');
-- INSERT INTO `github`.`klienci` (`id`, `dane`, `adres`, `kod`, `miasto`, `tel`, `punkty`) VALUES (NULL, '$dane', '$adres', '$kod', '$miasto', '$telefon', '');
-- INSERT INTO `github`.`baza` (`id`, `nazwa`, `koszt`, `kategoria`, `ilosc_akt`, `ilosc`, `ean`) VALUES (NULL, '$nazwa', '$cena', '$kategoria', '', '$ilosc', '$ean');
-- INSERT INTO `github`.`zamowienia` (`id`, `id_produktu`, `id_klienta`, `ilosc`, `koszt1`, `rabat`, `koszt2`, `data`, `status`) VALUES (NULL, '$id_produktu', '$id_klienta', ' $ilosc', '$koszt', '$rabat', '$koszt_calkowity', '$data', '$status');
-- UPDATE github SET $ilosc_akt, $id_produktu WHERE name = ""
-- DELETE FROM github WHERE $id
+- INSERT INTO `kategorie` (`id`, `nazwa`) VALUES (NULL, '$nazwa_kategorii');
+- INSERT INTO  `uzytkownik` (`id` ,`nazwa` ,`haslo` ,`uprawnienia`)VALUES (NULL ,  '$nazwa_uzytkownika,',  '$haslo_md5',  '1');
+- INSERT INTO ``klienci` (`id`, `dane`, `adres`, `kod`, `miasto`, `tel`, `punkty`) VALUES (NULL, '$dane', '$adres', '$kod', '$miasto', '$telefon', '');
+- INSERT INTO `baza` (`id`, `nazwa`, `koszt`, `kategoria`, `ilosc_akt`, `ilosc`, `ean`) VALUES (NULL, '$nazwa', '$cena', '$kategoria', '', '$ilosc', '$ean');
+- INSERT INTO ``zamowienia` (`id`, `id_produktu`, `id_klienta`, `ilosc`, `koszt1`, `rabat`, `koszt2`, `data`, `status`) VALUES (NULL, '$id_produktu', '$id_klienta', ' $ilosc', '$koszt', '$rabat', '$koszt_calkowity', '$data', '$status');
+- UPDATE `baza` SET $ilosc_akt WHERE id = "$id_produktu"
+- DELETE FROM `baza` WHERE id="$id"
