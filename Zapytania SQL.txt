@@ -1,0 +1,7 @@
+WHERE nazwa LIKE $username AND haslo LIKE $password
+
+SELECT uzytkownik.uprawnienia WHERE nazwa LIKE $_SESSION['username']
+
+SELECT kategorie.nazwa 
+
+SELECT uzytkownik.nazwa
