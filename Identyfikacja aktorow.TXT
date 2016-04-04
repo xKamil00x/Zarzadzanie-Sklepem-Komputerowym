@@ -1,0 +1,24 @@
+Identyfikacja aktorów.
+
+
+1) Administrator:
+- Iloœæ towaru przechowywanego na magazynie
+- Wyœwietlenie z³o¿onych zamówieñ
+- Zarz¹dzanie towarami
+- Promocje
+- Przechowywanie danych klientów
+- Zarz¹dzanie zamówieniami
+- Importowanie/Exportowanie do bazy danych
+- Dostêp do wszystkich funkcji w firmie
+- Zmiana cen produktów
+
+2) Magazynier:
+- Przyjmowanie towaru od dostawcy do magazynu
+- Ioœæ towaru przechowywana w magazynie
+- Mo¿liwoœæ zmiany statusu towaru
+- Wyœwietlenie z³o¿onych zamówieñ
+- Zarz¹dzanie dzia³ami towarowymi
+
+3) Klient
+- Sk³adanie zamówieñ
+- Anulowanie zamówieñ
