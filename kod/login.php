@@ -4,7 +4,7 @@ session_start();
 require('include/functions.inc.php');
 $db = dbConnect();
 
-  if(isset($_SESSION['nazwa_uzytkownika']) && $db->numRows("SELECT * FROM uzytkownik WHERE nazwa = '".$_SESSION['nazwa_uzytkownika']."'") > 0) {
+  if(isset($_SESSION['username']) && $db->numRows("SELECT * FROM uzytkownik WHERE nazwa = '".$_SESSION['username']."'") > 0) {
     header('Location: home.php');
   } else {
 ?>
@@ -13,14 +13,14 @@ $db = dbConnect();
 
 <? 
   function form($error)
-  { if($error){ 	echo '<section class="login"> <center>'.$error.'</center></section>'; } else { echo ''; }
+  { if($error){ 	echo '<section class="login"> <center>'.$error.'</center></section>'; } else { echo ''; }}
 ?> 
 
 <form id="login-form" accept-charset="utf-8" action="" method='POST'>
 <h1>Logowanie do systemu</h1>
-<input type="text" value="" placeholder="nazwa_uzytkownika" tabindex="20" name="nazwa_uzytkownika">
-  <div class="haslo-container">
-<input type="haslo" placeholder="haslo" tabindex="21" name="haslo">
+<input type="text" value="" placeholder="username" tabindex="20" name="username">
+  <div class="password-container">
+<input type="password" placeholder="password" tabindex="21" name="password">
 
 </div>
 <button class="button submit" data-analytics="sign-in" type="submit" id="Submit" name="Submit">Zaloguj</button>
@@ -31,19 +31,19 @@ $db = dbConnect();
 </section>
 
 <?
-  }
+  
   if(isset($_REQUEST['Submit'])) {
-    if(!$_POST['nazwa_uzytkownika'] || !$_POST['haslo']) {
+    if(!$_POST['username'] || !$_POST['password']) {
       $error = 'Blad: Wszystkie pola sa wymagane';
       echo form($error);
     } else {
-      if (login_check($_POST['nazwa_uzytkownika'],$_POST['haslo'])) {
+      if (login_check($_POST['username'],$_POST['password'])) {
         header('Location: home.php');
         $_SESSION["ip"] = getenv('REMOTE_ADDR');
-        $_SESSION["nazwa_uzytkownika"] = $_POST['nazwa_uzytkownika'];
-        $_SESSION["haslo"] = $_POST['haslo'];
+        $_SESSION["username"] = $_POST['username'];
+        $_SESSION["password"] = $_POST['password'];
             } else {
-        $error = "Bledna nazwa uzytkownika, lub haslo";
+        $error = "Bledna nazwa uzytkownika, lub password";
         echo form($error);
       }
     }
@@ -51,8 +51,8 @@ $db = dbConnect();
     if(isset($_GET['logout'])) {
       session_destroy();
           } else { 
-      if (isset($_SESSION['nazwa_uzytkownika'])) { 
-        if (login_check($_SESSION['nazwa_uzytkownika'],$_SESSION['haslo'])) { 
+      if (isset($_SESSION['username'])) { 
+        if (login_check($_SESSION['username'],$_SESSION['password'])) { 
         } else { 
           
         } 
