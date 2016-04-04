@@ -1,0 +1,7 @@
+function connectdb() {
+  require('config.php');
+  global $dbhost, $dbuser, $dbpass, $dbname, $db;
+  $db = mysql_connect("$dbhost", "$dbuser", "$dbpass") or die('Skrypt, nie moze polaczyc sie z baza');
+  mysql_select_db("$dbname",$db);
+  return $db;
+}
