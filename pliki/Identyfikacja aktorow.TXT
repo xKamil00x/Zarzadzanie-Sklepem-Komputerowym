@@ -1,7 +1,7 @@
 Identyfikacja aktorów.
 
 
-1) Administrator:
+1) Kierownik sklepu:
 - Ilość towaru przechowywanego na magazynie
 - Wyświetlenie złożonych zamówień
 - Zarządzanie towarami
