@@ -3,6 +3,6 @@ SELECT * FROM `kategorie`
 
 SELECT * FROM `uzytkownik`
 
-SELECT FROM `uzytkownik` WHERE `nazwa` = '$_SESSION['username']'
+SELECT * FROM `uzytkownik` WHERE `nazwa` = '$_SESSION['username']'
 
-SELECT FROM `uzytkownik` WHERE `nazwa` = '$username' AND `haslo` = '$password'
+SELECT * FROM `uzytkownik` WHERE `nazwa` = '$username' AND `haslo` = '$password'
