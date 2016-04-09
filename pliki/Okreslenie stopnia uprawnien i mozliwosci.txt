@@ -12,7 +12,7 @@ uprawnienia sprzedawcy i magazyniera oraz:
 - uaktualnienie cen.
 
 b) sprzedawca:
-stopien 0
+stopien 3
 uprawnienia:
 -dodawanie klienta,
 -przyjmowanie zamowienia,
