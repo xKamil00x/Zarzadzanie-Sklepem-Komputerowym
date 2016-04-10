@@ -52,7 +52,7 @@ else {
 if(useraccess($_SESSION['username'])=='1'){
 ?>
 
-  <form class="login-form" action="./zapis-konfiguracja.php" method='POST'>
+  <form class="login-form" action="./dzialania/zapis-konfiguracja.php" method='POST'>
     <input type="text" placeholder="Nazwa Sklepu" name="nazwa"/><br>
     <input type="text" placeholder="Punkty do rabatu" name="punkty"/><br>Wprowadź ilość punktów, dzięki którym klient otrzyma zniżkę 10%. Punkty sumują się i naliczają większą obniżkę. Za każdą wydaną złotówkę, system dodaje 1 punkt do konta danego klienta (tylko w przypadku zamówień rejestrowanych). Jeśli nie chcesz wprowadzić systemu punktowego, wprowadź wartość 0<br><br>
     <button class="button submit" data-analytics="sign-in" type="submit" id="Submit" name="Submit">Zapisz dane i rozpocznij</button>
