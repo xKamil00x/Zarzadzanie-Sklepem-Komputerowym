@@ -1,22 +1,35 @@
-<section class="footer-section">
-<div class="container">
-<div class="row">
-<div class="col-md-12">
-<center>  <b class="copyright">STOPKA</center>   </div>
+  <footer class="main-footer">
+        <!-- To the right -->
+        <div class="pull-right hidden-xs">
+          Projekt Zespołowy - Politechnika Koszalińska<br>Wydział Elektroniki i Informatyki | Semestr VI<br>
+        </div>
+        <!-- Default to the left -->
+        <strong>Copyright &copy; 2016 <a >KomputeREX</a> - Oprogramowanie dla firm.</strong>
+      </footer>
 
-</div>
-</div>
-</section>
+  
+    <!-- REQUIRED JS SCRIPTS -->
 
-
-
-<script src="assets/js/jquery-1.10.2.js"></script>
-    <!-- BOOTSTRAP SCRIPTS  -->
-    <script src="assets/js/bootstrap.js"></script>
-    <!-- DATATABLE SCRIPTS  -->
-    <script src="assets/js/dataTables/jquery.dataTables.js"></script>
-    <script src="assets/js/dataTables/dataTables.bootstrap.js"></script>
-      <!-- CUSTOM SCRIPTS  -->
-    <script src="assets/js/custom.js"></script>
-      
-    </body>
+    <!-- jQuery 2.1.4 -->
+    <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <!-- Bootstrap 3.3.5 -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/app.min.js"></script>
+    <script src="plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="plugins/datatables/dataTables.bootstrap.min.js"></script>        
+   <script>
+      $(function () {
+        $("#example1").DataTable();
+        $('#example2').DataTable({
+          "paging": true,
+          "lengthChange": false,
+          "searching": false,
+          "ordering": true,
+          "info": true,
+          "autoWidth": false
+        });
+      });
+    </script>
+  </body>
+</html>
