@@ -19,6 +19,13 @@ require("./include/zapytania-home.php");
 
         <!-- Main content -->
         <section class="content">
+        
+    <? require("./include/komunikaty.php"); ?>    
+        
+        
+        
+        
+        
 <!-- Small boxes (Stat box) -->
           <div class="row">
             <div class="col-lg-3 col-xs-6">
