@@ -1,0 +1,8 @@
+Kody błędów:
+Format numeracyjny XXX
+0XX - błędy zielone - pomyślnie zapisano etc.
+1XX - błędy niebieskie - informacje etc.
+2XX - błędy czerwone - krytyczne etc.
+
+Błędy:
+001 - Sklep został poprawnie skonfigurowany i jest gotowy do działania.
