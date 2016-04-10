@@ -8,11 +8,11 @@ require("./include/zapytania-home.php");
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            Komputerex
-            <small>Sprzęt marzeń</small>
+            <? echo $konfiguracja;?>
+            
           </h1>
           <ol class="breadcrumb">
-            <li><a><i class="fa fa-dashboard"></i> Komputerex</a></li>
+            <li><a><i class="fa fa-dashboard"></i> <? echo $konfiguracja;?></a></li>
             <li class="active">Spis produktów</li>
           </ol>
         </section>
